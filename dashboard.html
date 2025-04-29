@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - SW Parceiros</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <div id="sidebar" class="sidebar">
+      <div class="logo">
+        <img src="img/logo.png" alt="SW Rastreamento" width="150">
+      </div>
+      <ul>
+        <li><a href="#" id="indicarClientes">Indicar Clientes</a></li>
+        <li><a href="#" id="minhasIndicacoes">Minhas Indicações</a></li>
+      </ul>
+    </div>
+    <div id="mainContent" class="main-content">
+      <header class="header-dashboard">
+        <h1>Bem-vindo ao Dashboard</h1>
+ </header>
+
+      <!-- Formulário de Indicação -->
+      <div id="formIndicarClientes" class="content-tab" style="display: none;">
+        <h3>Indique um Cliente</h3>
+        <form id="formIndicar">
+          <input type="text" id="clienteNome" placeholder="Nome do Cliente" required>
+          <input type="email" id="clienteEmail" placeholder="Email do Cliente" required>
+          <input type="tel" id="clienteTelefone" placeholder="Telefone do Cliente" required>
+          <button type="submit">Enviar Indicação</button>
+        </form>
+      </div>
+
+      <!-- Tabela de Minhas Indicações -->
+      <div id="minhasIndicacoesTab" class="content-tab" style="display: none;">
+        <h3>Minhas Indicações</h3>
+        <table id="indicacoesTable">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Empresa</th> <!-- Nova coluna Empresa -->
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <footer>
+        <p>&copy; 2025 SW Rastreamento</p>
+        <button id="logoffButton">Sair</button>
+      </footer>
+    </div>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
