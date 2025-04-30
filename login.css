@@ -30,9 +30,9 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #00336680;
+  background-color: #003366;
   border: none;
-  color: white;
+  color: blue;
   font-size: 16px;
   border-radius: 5px;
   margin-top: 10px;
