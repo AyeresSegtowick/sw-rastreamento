@@ -3,22 +3,28 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between; /* Adicionado para empurrar o footer para o final */
   align-items: center;
   height: 100vh;
   margin: 0;
 }
+
 .container {
   background: #ffffff20;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
 h1 {
   margin-bottom: 10px;
   font-size: 28px;
 }
+
 input {
   width: 80%;
   padding: 10px;
@@ -26,6 +32,7 @@ input {
   border: none;
   border-radius: 10px;
 }
+
 button {
   width: 30%;
   padding: 10px;
@@ -37,22 +44,28 @@ button {
   margin-top: 10px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #001f4d;
 }
+
 a.link {
   display: block;
   margin-top: 10px;
   color: white;
   text-decoration: underline;
 }
+
 .logo {
   width: 200px;
   margin-bottom: 20px;
 }
 
-}
+/* NOVO: Estilização do rodapé */
 footer {
-  margin-top: 550px;
   text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  color: white;
 }
